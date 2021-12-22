@@ -68,11 +68,11 @@ def main():
 
     PIL.Image.fromarray(img).save(osp.join(out_dir, "img.png"))
     utils.lblsave(osp.join(out_dir, "label.png"), lbl)
-    PIL.Image.fromarray(lbl_viz).save(osp.join(out_dir, "label_viz.png"))
+    #PIL.Image.fromarray(lbl_viz).save(osp.join(out_dir, "label_viz.png"))
 
-    with open(osp.join(out_dir, "label_names.txt"), "w") as f:
-        for lbl_name in label_names:
-            f.write(lbl_name + "\n")
+    #with open(osp.join(out_dir, "label_names.txt"), "w") as f:
+    #    for lbl_name in label_names:
+    #        f.write(lbl_name + "\n")
 
     logger.info("Saved to: {}".format(out_dir))
 
